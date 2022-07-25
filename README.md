@@ -94,7 +94,8 @@ def createCon():
 2. Check the domain in db 
 3. Start Host Discovery 
 - Shodan 
-- Censys (Returns: Ipaddress, Location,ASN, ASN ASN Name, ASN Description, ASN PREFIX, Service Port, Service Name, TCP Certificate)
+- CriminalIP (Returns: Ipaddress, Location,ASN, ASN ASN Name, ASN Description, ASN PREFIX, Service Port, Service Name, TCP Certificate)
+- Censys(Returns: Ipaddress, Location,ASN, ASN ASN Name, ASN Description, ASN PREFIX, Service Port, Service Name, TCP Certificate)
 - CRT.SH (Returns: Hostname)
 - CertSpooter (Returns: Hostname)
 - VirusTotal (Returns: Hostname)
@@ -105,6 +106,7 @@ def createCon():
 5. Host Enum 
 - Censys
 - Shodan
+- CriminalIP
 6. Check Service enum in DB
 7. Start Service enum 
 - WayBackMachine
@@ -128,6 +130,7 @@ def createCon():
 - VirusTottal: Used to enumerate hosts from domain and subdomains. (https://www.virustotal.com)
 - SecurityTrails: Used to enumerate hosts from domain and subdomains. (https://api.securitytrails.com)
 - Spyse Used to get hosts from domain and ports from hosts (https://api.spyse.com/)
+- CriminalIP: Criminal IP is a specialized Cyber Threat Intelligence (CTI) search engine that allows users to search for various security-related information such as malicious IP addresses, domains, banners, etc. It can be widely integrated (https://www.criminalip.io/)
 - DONE dnsbuffer
 # Discovery
 #### Censys (Features ok)
@@ -155,6 +158,10 @@ Returns info related to services available like: Banners, content etc
 #### VirusTotal (Features ok)
 - Docs
 - API Docs: https://developers.virustotal.com/reference/overview
+
+#### CriminalIP (Check Features)
+- CriminalIP: Used to get services at hosts. (https://www.criminalip.io/ko/developer/api/get-ip-data)
+- DNS, VPN, Hosting, Scan, Report ... more information
 
 ```
 Public API constraints and restrictions
